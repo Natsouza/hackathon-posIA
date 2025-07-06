@@ -1,0 +1,157 @@
+[
+  {
+    "componente": "Usuários SEI",
+    "ameacas": ["Spoofing", "Repudiation"],
+    "contramedidas": ["Autenticação multifator", "Auditoria de logs"]
+  },
+  {
+    "componente": "api gateway",
+    "ameacas": ["Spoofing", "Tampering", "Information Disclosure"],
+    "contramedidas": ["Validação de tokens", "Criptografia de dados", "Limitação de taxa"]
+  },
+  {
+    "componente": "api management",
+    "ameacas": ["Spoofing", "Information Disclosure"],
+    "contramedidas": ["Autorização baseada em função", "Monitoramento de API"]
+  },
+  {
+    "componente": "developer portal",
+    "ameacas": ["Information Disclosure", "Elevation of Privilege"],
+    "contramedidas": ["Controle de acesso", "Sanitização de entrada"]
+  },
+  {
+    "componente": "logic apps",
+    "ameacas": ["Tampering", "Denial of Service"],
+    "contramedidas": ["Validação de payload", "Escalonamento automático"]
+  },
+  {
+    "componente": "azure services",
+    "ameacas": ["Elevation of Privilege", "Information Disclosure"],
+    "contramedidas": ["Princípio do menor privilégio", "Criptografia em repouso"]
+  },
+  {
+    "componente": "saas services",
+    "ameacas": ["Information Disclosure", "Spoofing"],
+    "contramedidas": ["Autenticação SSO", "Monitoramento de acesso"]
+  },
+  {
+    "componente": "rest",
+    "ameacas": ["Tampering", "Information Disclosure"],
+    "contramedidas": ["Validação de entrada", "HTTPS obrigatório"]
+  },
+  {
+    "componente": "soap",
+    "ameacas": ["Tampering", "Information Disclosure"],
+    "contramedidas": ["Assinatura digital", "Criptografia de mensagens"]
+  },
+  {
+    "componente": "microsoft entra",
+    "ameacas": ["Spoofing", "Elevation of Privilege"],
+    "contramedidas": ["Autenticação forte", "Revisão de permissões"]
+  },
+  {
+    "componente": "resource group",
+    "ameacas": ["Elevation of Privilege", "Tampering"],
+    "contramedidas": ["Controle de RBAC", "Auditoria de alterações"]
+  },
+  {
+    "componente": "application load balancer",
+    "ameacas": ["Tampering", "Information Disclosure"],
+    "contramedidas": ["Firewall de aplicação", "Criptografia TLS"]
+  },
+  {
+    "componente": "aws shield",
+    "ameacas": ["Denial of Service"],
+    "contramedidas": ["Proteção DDoS", "Monitoramento de tráfego"]
+  },
+  {
+    "componente": "cloudfront",
+    "ameacas": ["Information Disclosure", "Tampering"],
+    "contramedidas": ["Cache seguro", "Validação de origem"]
+  },
+  {
+    "componente": "aws waf",
+    "ameacas": ["Tampering", "Denial of Service"],
+    "contramedidas": ["Regras customizadas", "Bloqueio de IP"]
+  },
+  {
+    "componente": "cloudtrail",
+    "ameacas": ["Information Disclosure", "Repudiation"],
+    "contramedidas": ["Logs imutáveis", "Monitoramento contínuo"]
+  },
+  {
+    "componente": "aws kms",
+    "ameacas": ["Tampering", "Information Disclosure"],
+    "contramedidas": ["Rotação de chaves", "Acesso restrito"]
+  },
+  {
+    "componente": "aws backup",
+    "ameacas": ["Information Disclosure", "Tampering"],
+    "contramedidas": ["Criptografia de backup", "Controle de acesso"]
+  },
+  {
+    "componente": "cloudwatch",
+    "ameacas": ["Information Disclosure", "Denial of Service"],
+    "contramedidas": ["Alertas automáticos", "Limite de requisições"]
+  },
+  {
+    "componente": "efs",
+    "ameacas": ["Information Disclosure", "Elevation of Privilege"],
+    "contramedidas": ["Permissões granulares", "Criptografia em trânsito"]
+  },
+  {
+    "componente": "rds",
+    "ameacas": ["Tampering", "Elevation of Privilege"],
+    "contramedidas": ["Backup automático", "Acesso restrito"]
+  },
+  {
+    "componente": "elasticache",
+    "ameacas": ["Information Disclosure", "Tampering"],
+    "contramedidas": ["Isolamento de rede", "Monitoramento de acesso"]
+  },
+  {
+    "componente": "auto scaling",
+    "ameacas": ["Tampering", "Denial of Service"],
+    "contramedidas": ["Políticas de escalonamento seguro", "Limite de instâncias"]
+  },
+  {
+    "componente": "solr",
+    "ameacas": ["Spoofing", "Information Disclosure"],
+    "contramedidas": ["Autenticação de API", "Criptografia de dados"]
+  },
+  {
+    "componente": "sei / sip",
+    "ameacas": ["Spoofing", "Tampering", "Information Disclosure", "Elevation of Privilege"],
+    "contramedidas": ["Auditoria de acesso", "Validação de permissões"]
+  },
+  {
+    "componente": "vpc",
+    "ameacas": ["Tampering", "Information Disclosure"],
+    "contramedidas": ["Segmentação de rede", "Firewall de borda"]
+  },
+  {
+    "componente": "public subnet",
+    "ameacas": ["Spoofing", "Information Disclosure"],
+    "contramedidas": ["Listas de controle de acesso", "Monitoramento de tráfego"]
+  },
+  {
+    "componente": "private subnet",
+    "ameacas": ["Elevation of Privilege", "Tampering"],
+    "contramedidas": ["Acesso restrito", "VPN obrigatória"]
+  },
+  {
+    "componente": "availability zone",
+    "ameacas": ["Denial of Service"],
+    "contramedidas": ["Redundância geográfica", "Failover automático"]
+  },
+  {
+    "componente": "amazon simple email service",
+    "ameacas": ["Spoofing", "Information Disclosure"],
+    "contramedidas": ["SPF/DKIM/DMARC", "Criptografia de e-mail"]
+  },
+  {
+    "componente": "ec2",
+    "ameacas": ["Elevation of Privilege", "Tampering", "Information Disclosure"],
+    "contramedidas": ["Controle de acesso IAM", "Criptografia de disco", "Monitoramento de instâncias"]
+  }
+]
