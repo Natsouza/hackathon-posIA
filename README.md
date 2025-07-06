@@ -5,72 +5,90 @@ Este projeto utiliza o serviço Azure Computer Vision para identificar automatic
 
 🔧 Tecnologias Utilizadas
 
-Python 3.10+
-Streamlit (interface web)
-Azure Cognitive Services (Computer Vision)
-OpenCV (leitura/edição de imagem)
-Pillow (manipulação de imagem)
-JSON (armazenamento de ameaças)
+  Python 3.10+
+  
+  Streamlit (interface web)
+  
+  Azure Cognitive Services (Computer Vision)
+  
+  OpenCV (leitura/edição de imagem)
+  
+  Pillow (manipulação de imagem)
+  
+  JSON (armazenamento de ameaças)
 
 
 ▶️ Como Executar o Projeto Localmente
 
-1. Clone o repositório
+  1. Clone o repositório
 
-git clone https://github.com/seuusuario/hackathon-posIA.git
+    git clone https://github.com/seuusuario/hackathon-posIA.git
 
-cd hackathon-posIA
+    cd hackathon-posIA
 
-2. Crie o ambiente virtual (opcional mas recomendado)
+  2. Crie o ambiente virtual (opcional mas recomendado)
 
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+    python -m venv venv
 
-3. Instale as dependências
+  source venv/bin/activate  # Linux/Mac
+  venv\Scripts\activate     # Windows
 
-pip install -r requirements.txt
+  3. Instale as dependências
 
-4. Configure variáveis de ambiente - utilizando o KEY VAULT AZURE
+    pip install -r requirements.txt
 
-Crie um arquivo .env com as seguintes variáveis:
+  4. Configure variáveis de ambiente - utilizando o KEY VAULT AZURE
 
-KEY_VAULT_NAME= 'inclua seu key vault'
-AZURE_CLIENT_ID='client_id da azure'
-AZURE_TENANT_ID= 'client tenant id'
-AZURE_CLIENT_SECRET= 'valor da secret criada'
+  Crie um arquivo .env com as seguintes variáveis:
 
-Seguir a aula 6-Módulo 5 para fazer o passo a passoa na sua conta Azure
+    KEY_VAULT_NAME= 'inclua seu key vault'
+    AZURE_CLIENT_ID='client_id da azure'
+    AZURE_TENANT_ID= 'client tenant id'
+    AZURE_CLIENT_SECRET= 'valor da secret criada'
 
-5. Execute a aplicação
+  Seguir a aula 6-Módulo 5 para fazer o passo a passoa na sua conta Azure
 
-streamlit run src/app.py
+  5. Execute a aplicação
+
+    streamlit run src/app.py
 
 📸 Como Usar
 
-Faça upload de um diagrama de arquitetura (PNG, JPG, etc.)
-A aplicação analisará os componentes com o Azure Computer Vision
+  Faça upload de um diagrama de arquitetura (PNG, JPG, etc.)
+  
+  A aplicação analisará os componentes com o Azure Computer Vision
 
-Será exibido:
-Lista de componentes identificados
-Ameaças STRIDE por componente
-Vulnerabilidades e contramedidas
+  Será exibido:
+  Lista de componentes identificados
+  
+  Ameaças STRIDE por componente
+  
+  Vulnerabilidades e contramedidas
 
 📌 Possíveis Melhorias
-Treinar modelo próprio com dataset anotado para detectar ícones de arquitetura
-Integração com CV de outras nuvens (Google Vision API)
-Exportação de relatório em PDF ou DOCX
+  
+  Treinar modelo próprio com dataset anotado para detectar ícones de arquitetura
+
+  Integração com CV de outras nuvens (Google Vision API)
+  
+  Exportação de relatório em PDF ou DOCX
 
 🧠 Metodologia STRIDE
 
-STRIDE é um modelo de modelagem de ameaças que representa:
-Spoofing
-Tampering
-Repudiation
-Information Disclosure
-Denial of Service
-Elevation of Privilege
+  STRIDE é um modelo de modelagem de ameaças que representa:
 
+  Spoofing
+  
+  Tampering
+  
+  Repudiation
+  
+  Information Disclosure
+  
+  Denial of Service
+  
+  Elevation of Privilege
+  
 👨‍💻 Autoria
 
-Projeto desenvolvido para Hackathon 3IADT - Inteligência Artificial para Devs
+  Projeto desenvolvido para Hackathon 3IADT - Inteligência Artificial para Devs
