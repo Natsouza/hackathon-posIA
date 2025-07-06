@@ -1,5 +1,4 @@
 # hackathon-posIA
-Hackathon referente a pós IA
 Projeto: Análise de Diagramas de Arquitetura com Azure Computer Vision + STRIDE
 
 Este projeto utiliza o serviço Azure Computer Vision para identificar automaticamente componentes em diagramas de arquitetura de software (AWS e Azure), gerar um relatório de ameaças baseado na metodologia STRIDE, e apresentar as vulnerabilidades e contramedidas por componente.
@@ -7,15 +6,10 @@ Este projeto utiliza o serviço Azure Computer Vision para identificar automatic
 🔧 Tecnologias Utilizadas
 
 Python 3.10+
-
 Streamlit (interface web)
-
 Azure Cognitive Services (Computer Vision)
-
 OpenCV (leitura/edição de imagem)
-
 Pillow (manipulação de imagem)
-
 JSON (armazenamento de ameaças)
 
 
@@ -24,6 +18,7 @@ JSON (armazenamento de ameaças)
 1. Clone o repositório
 
 git clone https://github.com/seuusuario/hackathon-posIA.git
+
 cd hackathon-posIA
 
 2. Crie o ambiente virtual (opcional mas recomendado)
@@ -36,12 +31,16 @@ venv\Scripts\activate     # Windows
 
 pip install -r requirements.txt
 
-4. Configure variáveis de ambiente
+4. Configure variáveis de ambiente - utilizando o KEY VAULT AZURE
 
 Crie um arquivo .env com as seguintes variáveis:
 
-AZURE_CV_ENDPOINT=https://<seu-endpoint>.cognitiveservices.azure.com/
-AZURE_CV_KEY=<sua-chave-de-api>
+KEY_VAULT_NAME= 'inclua seu key vault'
+AZURE_CLIENT_ID='client_id da azure'
+AZURE_TENANT_ID= 'client tenant id'
+AZURE_CLIENT_SECRET= 'valor da secret criada'
+
+Seguir a aula 6-Módulo 5 para fazer o passo a passoa na sua conta Azure
 
 5. Execute a aplicação
 
@@ -50,39 +49,26 @@ streamlit run src/app.py
 📸 Como Usar
 
 Faça upload de um diagrama de arquitetura (PNG, JPG, etc.)
-
 A aplicação analisará os componentes com o Azure Computer Vision
 
 Será exibido:
-
 Lista de componentes identificados
-
 Ameaças STRIDE por componente
-
 Vulnerabilidades e contramedidas
 
 📌 Possíveis Melhorias
-
 Treinar modelo próprio com dataset anotado para detectar ícones de arquitetura
-
 Integração com CV de outras nuvens (Google Vision API)
-
 Exportação de relatório em PDF ou DOCX
 
 🧠 Metodologia STRIDE
 
 STRIDE é um modelo de modelagem de ameaças que representa:
-
 Spoofing
-
 Tampering
-
 Repudiation
-
 Information Disclosure
-
 Denial of Service
-
 Elevation of Privilege
 
 👨‍💻 Autoria
